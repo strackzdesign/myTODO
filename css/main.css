@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+}
+
+/*----------------------------------------------------------------------------*/
+/* [ TITLE ] */
+/*----------------------------------------------------------------------------*/
+
+div.content_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    height: 6.5vh;
+    font-size: 1.1em;
+    border-bottom: 2px solid #0080ff;
+}
+
+div.content_title > h1 {
+    color: rgb(255, 255, 255);
+}
+
+/*----------------------------------------------------------------------------*/
+/* [ FORM ] */
+/*----------------------------------------------------------------------------*/
+
+form.content_form {
+    padding: 3% 0;
+    text-align: center;
+    border-bottom: 2px solid #0080ff;
+}
+
+form.content_form > input {
+    border: 0;
+    text-align: center;
+    color: white;
+}
+
+input.formtext {
+    background-color: rgb(26, 26, 26);
+    height: 25px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+input.formtext:focus {
+    border: 1px solid #0080ff;
+}
+
+input.formadd {
+    background-color: rgb(32, 32, 32);
+    height: 25px;
+    width: 19%;
+    border-radius: 5px;
+}
+
+input.formadd:hover {
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
+    transition: 0.3s ease-in-out;
+    color: #0080ff;
+}
+
+/*----------------------------------------------------------------------------*/
+/* [ TODO LIST ] */
+/*----------------------------------------------------------------------------*/
+
+div.content_todo {
+    padding: 3% 0;
+}
+
+div.todo {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    text-align: center;
+    padding: 3% 0;
+    border-bottom: 1px solid #0080ff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 11px 22px -3px rgba(0,0,0,0.54); 
+    box-shadow: 0px 11px 22px -3px rgba(0,0,0,0.54);
+    background-color: rgb(26, 26, 26);
+}
+
+div.todo:hover {
+    background-color: rgb(28, 28, 28);
+    transition: 0.1s ease-in-out;
+}
+
+div.todocheck_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2%;
+    margin-right: 2%;
+    border-right: 1px solid white;
+}
+
+input.todocheck {
+    height: 25px;
+    width: 25px;
+}
+
+input.todocheck:hover {
+    cursor: pointer;
+}
+
+input.todoremove {
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    color: white;
+    background-color: rgba(255, 122, 122, 0.719);
+    border: 0;
+    border-radius: 2px;
+}
+
+input.todoremove:hover {
+    cursor: pointer;
+    background-color: rgba(248, 96, 96, 0.719);
+    transition: 0.3s ease-in-out;
+}
+
+div.todotext_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    margin-right: 2%;
+}
+
+p.todotext {
+    color: white;
+}
+
+span.tododate {
+    color: rgb(190, 190, 190);
+    font-size: 0.8em;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* [ SPECIFIC CHANGES TO DESKTOP MODE ] */
+/*----------------------------------------------------------------------------*/
+
+@media (min-width: 1024px) {
+    form.content_form {
+        padding: 1% 0;
+    }
+
+    input.formtext {
+        width: 40%;
+    }
+
+    input.formadd {
+        width: 9.7%;
+    }
+
+    div.content_todo {
+        padding: 1% 0;
+    }
+
+    div.todo {
+        width: 50%;
+        padding: 1% 0;
+        margin-bottom: 1%;
+    }
+}
+
