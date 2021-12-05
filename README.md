@@ -4,8 +4,11 @@
 
 # [ Features ] #
 
-- Add/Remove/update todo from the list
-- Dark Theme (for now)
+- Add, Remove and update specific items in the todo list.
+- Responsive Website (Mobile, Tablet and Desktop), without any type of library or framework.
+- jQuery installed to compact as much as possible the code.
+- Dark Theme (for now).
+- Commented code to help the reading and understanding of the structure of the website.
 
 # [ Install ] #
 
