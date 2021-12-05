@@ -9,7 +9,7 @@
 
 # [ Install ] #
 
-- You just need to download the website and run it, the storage will be created in your localStorage.
+- You just need to download the website and run it, the data will be created/stored in your localStorage.
 - Good Luck !!
 
 # [ myInfo ] #
